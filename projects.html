@@ -57,6 +57,15 @@
         font-family: 'Roboto', sans-serif;
     }
 
+    .card-img:hover {
+        opacity: 0.7;
+        transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    }
+
+    .card-img:not(:hover) {
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
     </style>
 </head>
 
@@ -93,11 +102,16 @@
       </header>
   <main>
 
-    <div class="container">
+    <div class="container-fluid mb-5">
+
+        <p class="lead mb-0 text-center" style="color: rgb(194, 194, 194);">PROJECTS</p>
+        <p class="text-center fs-1 text-white fw-light">
+            Check out Real world Projects, I've made.
+        </p>
 
         <div class="row justify-content-center gy-4">
-        <div class="col-10">
-            <div class="card p-3 justify-content-between bg-transparent text-white" style="border: 1px solid grey;">
+        <div class="col-11">
+            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 3px solid grey;">
                 <div class="row">
                     <div class="col">
                         <div class="card-body">
@@ -120,19 +134,20 @@
                     <div class="col-md-12">
                         <div class="row gx-1">
                             <div class="col">
-                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title" data-bs-toggle="modal" data-bs-target="#imageModal">
                             </div>
                             <div class="col">
-                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                                <img class="card-img img-fluid rounded-2" src="healthCare2.png" alt="Title">
                             </div>
                         </div>
                         <div class="row gx-1 my-1">
                             <div class="col">
-                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                                <img class="card-img img-fluid rounded-2" src="healthCare3.png" alt="Title">
                             </div>
                             <div class="col">
-                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                                <img class="card-img img-fluid rounded-2" src="healthCare4.png" alt="Title">
                             </div>
+
                         </div>
                     </div>
                     
@@ -141,13 +156,13 @@
 
         </div>
 
-        <div class="col-10">
-            <div class="card p-3 justify-content-between bg-transparent text-white" style="border: 1px solid grey;">
+        <div class="col-11">
+            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 3px solid grey;">
                 <div class="row">
                     <div class="col">
                         <div class="card-body">
                             <a class="d-flex align-items-end" href="https://github.com/SyedArsalan798/flask-food-order-system">
-                                <i class="bi bi-filetype-php fs-3" style="margin-right: 7px;"></i>
+                                <i class="bi bi-filetype-py fs-3" style="margin-right: 7px;"></i>
                                 <h4 class="card-title">flask-food-order-system</h4>
                             </a>
                             <p class="card-text fs-5 text-muted">It's a Food Ordering System Website built with Flask (Python micro framework for website development), SQlite3, HTML5, CSS3, JavaScript
@@ -165,18 +180,67 @@
                     <div class="col-md-12">
                         <div class="row gx-1">
                             <div class="col">
-                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                                <img class="card-img img-fluid rounded-2" src="foodorder(i).png" alt="Title">
                             </div>
                             <div class="col">
-                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                                <img class="card-img img-fluid rounded-2" src="foodorder(ii).png" alt="Title">
                             </div>
                         </div>
                         <div class="row gx-1 my-1">
                             <div class="col">
-                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                                <img class="card-img img-fluid rounded-2" src="foodorder(iii).png" alt="Title">
                             </div>
                             <div class="col">
-                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                                <img class="card-img img-fluid rounded-2" src="foodorder(iv).png" alt="Title">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-11">
+            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 3px solid grey;">
+                <div class="row">
+                    <div class="col">
+                        <div class="card-body">
+                            <a class="d-flex align-items-end" href="https://github.com/SyedArsalan798/flask-food-order-system">
+                                <i class="bi bi-bootstrap-fill fs-3" style="margin-right: 7px;"></i>
+                                <h4 class="card-title">car-rental</h4>
+                            </a>
+                            <p class="card-text fs-5 text-muted">It's a Car Rental, Tours and Travels Service, and Hotel Management System Website built only with HTML5, CSS3, Bootstrap 5 
+                            </p>
+                            <div class="link">
+                                Website Link: 
+                                <a href="syedarsalan798.github.io/car-rental/">syedarsalan798.github.io/car-rental/</a>
+                            </div>
+                            <div class="spent-time d-flex">
+                                <p class="text-muted" style="margin-right: 5px;">Time Spent on Project: </p>
+                                <p>5 Days</p>
+                            </div>
+                            <div class="love-what-you-see d-flex justify-content-start">
+                                <p class="mb-0" style="margin-right: 10px;">Love what you see?</p>
+                                <i class="fa fa-heart fs-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row gx-1">
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="carrental1.png" alt="Title">
+                            </div>
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="carrental4.png" alt="Title">
+                            </div>
+                        </div>
+                        <div class="row gx-1 my-1">
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="carrental2.png" alt="Title">
+                            </div>
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="carrental3.png" alt="Title">
                             </div>
                         </div>
                     </div>
@@ -186,27 +250,43 @@
 
         </div>
         </div>
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+              <div class="modal-content rounded-0 border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close border border-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                  <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                </div>
+              </div>
+            </div>
+          </div>
+          
     
 
     </div>
 
     <script>
-        let heart = document.querySelector('.fa')
+        let heart = document.querySelectorAll('.fa')
         let isClicked = false;
-        heart.addEventListener("mouseover", function(){
+        for(let i=0;i<3;i++){
+            heart[i].addEventListener("mouseover", function(){
             this.style.color = "red";
-        });
-        heart.addEventListener("mouseout", function(){
-            if(!isClicked){
-                this.style.color = "white";
-            }
-            this.style.transform = "scale(1)";
-        });
-        heart.addEventListener("click", function(){
-            isClicked = true;
-            this.style.color = "red";
-            this.style.transform = "scale(1.2)";
-        });
+            });
+            heart[i].addEventListener("mouseout", function(){
+                if(!isClicked){
+                    this.style.color = "white";
+                }
+                this.style.transform = "scale(1)";
+            });
+            heart[i].addEventListener("click", function(){
+                isClicked = true;
+                this.style.color = "red";
+                this.style.transform = "scale(1.2)";
+            });
+
+        }
     </script>
 
     
