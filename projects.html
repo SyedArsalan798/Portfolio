@@ -8,8 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-  <!-- Bootstrap CSS v5.2.1 -->
-
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +21,6 @@
     <style>
         body{
             background-color: black;
-            background-image: url(https://i.pinimg.com/originals/7b/a0/9a/7ba09a4d53967c261d571597ef9e2cef.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment:fixed;
         }
     .navbar-brand{
         box-sizing: border-box;
@@ -40,12 +38,11 @@
         border: 0;
     }
     .nav-link:hover{
-        background-color: #ffd900d3;
-        color: black;
+        /* background-color: #ffd900d3; */
+        color: #ffd900d3;
         
     }
     .nav-link{
-        font-weight: bolder;
         color: white;
     }
     main{
@@ -57,7 +54,6 @@
         border-radius: 10px;
     }
     li{
-        font-weight: bold;
         font-family: 'Roboto', sans-serif;
     }
 
@@ -67,8 +63,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark p-0 align-items-center" style="background-color: black;">
-            <a class="navbar-brand mx-4" href="#"><img src="Webriew (1).png" alt="webriew" class="img-fluid"></a>
-            <button class="navbar-toggler d-lg-none mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            <a class="navbar-brand" href="#"><img src="Webriew (1).png" alt="webriew" class="img-fluid"></a>
+            <button class="navbar-toggler d-lg-none mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -87,15 +83,135 @@
                         <a class="nav-link px-2" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
-                <a class="fiverr btn mx-4 rounded-0 border-2 px-4 py-2" style="background-color: #FFD700; " href="https://www.fiverr.com/webriew" target="_blank" role="button" onmouseover="this.style.backgroundColor='#ffff'"
+                <a class="fiverr btn mx-4 rounded-pill px-4 py-0" style="background-color: #FFD700; " href="https://www.fiverr.com/webriew" target="_blank" role="button" onmouseover="this.style.backgroundColor='#ffe867'"
                 onmouseout="this.style.backgroundColor='#FFD700'">
-                <b>MY</b>  
+                <!-- <b>MY</b>   -->
                 <img src="https://th.bing.com/th/id/R.44bb9ce0af9de6ca7dfbba7428d7c4f4?rik=zB0NbwKqALur8g&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f10%2fFiverr-Logo.png&ehk=h45sJ0i%2bwIYggBVKSdxRuIfOiyPZbh3HkDqPm48LSBY%3d&risl=&pid=ImgRaw&r=0" width="70px" alt="">
                 </a>
             </div>
         </nav>
       </header>
   <main>
+
+    <div class="container">
+
+        <div class="row justify-content-center gy-4">
+        <div class="col-10">
+            <div class="card p-3 justify-content-between bg-transparent text-white" style="border: 1px solid grey;">
+                <div class="row">
+                    <div class="col">
+                        <div class="card-body">
+                            <a class="d-flex align-items-end" href="https://github.com/SyedArsalan798/medical-services">
+                                <i class="bi bi-filetype-php fs-3" style="margin-right: 7px;"></i>
+                                <h4 class="card-title">medical-services</h4>
+                            </a>
+                            <p class="card-text fs-5 text-muted">It's a Patient Management System website built with HTML5, CSS3, Bootstrap 5, JavaScript, jQuery, PHP, MySQL, Ajax.
+                            </p>
+                            <div class="spent-time d-flex">
+                                <p class="text-muted" style="margin-right: 5px;">Time Spent on Project: </p>
+                                <p>7 Days</p>
+                            </div>
+                            <div class="love-what-you-see d-flex justify-content-start">
+                                <p class="mb-0" style="margin-right: 10px;">Love what you see?</p>
+                                <i class="fa fa-heart fs-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row gx-1">
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                            </div>
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                            </div>
+                        </div>
+                        <div class="row gx-1 my-1">
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                            </div>
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-10">
+            <div class="card p-3 justify-content-between bg-transparent text-white" style="border: 1px solid grey;">
+                <div class="row">
+                    <div class="col">
+                        <div class="card-body">
+                            <a class="d-flex align-items-end" href="https://github.com/SyedArsalan798/flask-food-order-system">
+                                <i class="bi bi-filetype-php fs-3" style="margin-right: 7px;"></i>
+                                <h4 class="card-title">flask-food-order-system</h4>
+                            </a>
+                            <p class="card-text fs-5 text-muted">It's a Food Ordering System Website built with Flask (Python micro framework for website development), SQlite3, HTML5, CSS3, JavaScript
+                            </p>
+                            <div class="spent-time d-flex">
+                                <p class="text-muted" style="margin-right: 5px;">Time Spent on Project: </p>
+                                <p>~ 1 Month</p>
+                            </div>
+                            <div class="love-what-you-see d-flex justify-content-start">
+                                <p class="mb-0" style="margin-right: 10px;">Love what you see?</p>
+                                <i class="fa fa-heart fs-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row gx-1">
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                            </div>
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                            </div>
+                        </div>
+                        <div class="row gx-1 my-1">
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                            </div>
+                            <div class="col">
+                                <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        </div>
+    
+
+    </div>
+
+    <script>
+        let heart = document.querySelector('.fa')
+        let isClicked = false;
+        heart.addEventListener("mouseover", function(){
+            this.style.color = "red";
+        });
+        heart.addEventListener("mouseout", function(){
+            if(!isClicked){
+                this.style.color = "white";
+            }
+            this.style.transform = "scale(1)";
+        });
+        heart.addEventListener("click", function(){
+            isClicked = true;
+            this.style.color = "red";
+            this.style.transform = "scale(1.2)";
+        });
+    </script>
+
+    
+
+    
 
   </main>
   <footer>
