@@ -31,6 +31,9 @@
         font-family: 'Roboto', sans-serif;
         border: 0;
     }
+    a:hover{
+        text-decoration: none;
+    }
 
     .btn{
         font-family: 'Ubuntu', sans-serif;
@@ -38,12 +41,12 @@
         border: 0;
     }
     .nav-link:hover{
-        /* background-color: #ffd900d3; */
-        color: #ffd900d3;
-        
+        color: white;
+        background-color: #161c24;
     }
     .nav-link{
         color: white;
+        border-radius: 7px;
     }
     main{
         width: 100%;
@@ -111,11 +114,11 @@
 
         <div class="row justify-content-center gy-4">
         <div class="col-11">
-            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 3px solid grey;">
+            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 1px solid rgb(61, 61, 61);border-radius: 10px;">
                 <div class="row">
                     <div class="col">
                         <div class="card-body">
-                            <a class="d-flex align-items-end" href="https://github.com/SyedArsalan798/medical-services">
+                            <a class="d-flex align-items-end" target="_blank" href="https://github.com/SyedArsalan798/medical-services">
                                 <i class="bi bi-filetype-php fs-3" style="margin-right: 7px;"></i>
                                 <h4 class="card-title">medical-services</h4>
                             </a>
@@ -131,8 +134,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="row gx-1">
+                    <div class="col-md-12 mb-1">
+                        <div id="carouselId" class="carousel slide carousel-fade mx-2 mb-2" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                                <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+                
+                            </ol>
+                            <div class="carousel-inner" role="listbox" style="border-radius: 10px; opacity: 0.8;">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="healthCare.png" class="w-100 d-block" alt="First slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="healthCare2.png" class="w-100 d-block" alt="Second slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="healthCare3.png" class="w-100 d-block" alt="Third slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="healthCare4.png" class="w-100 d-block" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row gx-1">
                             <div class="col-md mb-1">
                                 <img class="card-img img-fluid rounded-2" src="healthCare.png" alt="Title" data-bs-toggle="modal" data-bs-target="#imageModal">
                             </div>
@@ -148,7 +174,7 @@
                                 <img class="card-img img-fluid rounded-2" src="healthCare4.png" alt="Title">
                             </div>
 
-                        </div>
+                        </div> -->
                     </div>
                     
                 </div>
@@ -157,11 +183,11 @@
         </div>
 
         <div class="col-11">
-            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 3px solid grey;">
+            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 1px solid rgb(61, 61, 61);border-radius: 10px;">
                 <div class="row">
                     <div class="col">
                         <div class="card-body">
-                            <a class="d-flex align-items-end" href="https://github.com/SyedArsalan798/flask-food-order-system">
+                            <a class="d-flex align-items-end" target="_blank" href="https://github.com/SyedArsalan798/flask-food-order-system">
                                 <i class="bi bi-filetype-py fs-3" style="margin-right: 7px;"></i>
                                 <h4 class="card-title">flask-food-order-system</h4>
                             </a>
@@ -177,21 +203,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="row gx-1">
-                            <div class="col-md mb-1">
-                                <img class="card-img img-fluid rounded-2" src="foodorder(i).png" alt="Title">
-                            </div>
-                            <div class="col-md">
-                                <img class="card-img img-fluid rounded-2" src="foodorder(ii).png" alt="Title">
-                            </div>
-                        </div>
-                        <div class="row gx-1 my-1">
-                            <div class="col-md mb-1">
-                                <img class="card-img img-fluid rounded-2" src="foodorder(iii).png" alt="Title">
-                            </div>
-                            <div class="col-md">
-                                <img class="card-img img-fluid rounded-2" src="foodorder(iv).png" alt="Title">
+                    <div class="col-md-12 mb-1">
+                        <div id="carouselId2" class="carousel slide carousel-fade mx-2 mb-2" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselId2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                                <li data-bs-target="#carouselId2" data-bs-slide-to="1" aria-label="Second slide"></li>
+                                <li data-bs-target="#carouselId2" data-bs-slide-to="2" aria-label="Third slide"></li>
+                                <li data-bs-target="#carouselId2" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+                
+                            </ol>
+                            <div class="carousel-inner" role="listbox" style="border-radius: 10px; opacity: 0.8;">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="foodorder(i).png" class="w-100 d-block" alt="First slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="foodorder(ii).png" class="w-100 d-block" alt="Second slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="foodorder(iii).png" class="w-100 d-block" alt="Third slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="foodorder(iv).png" class="w-100 d-block" alt="Third slide">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -202,11 +235,11 @@
         </div>
 
         <div class="col-11">
-            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 3px solid grey;">
+            <div class="card p-4 justify-content-between bg-transparent text-white" style="border: 1px solid rgb(61, 61, 61);border-radius: 10px;">
                 <div class="row">
                     <div class="col">
                         <div class="card-body">
-                            <a class="d-flex align-items-end" href="https://github.com/SyedArsalan798/flask-food-order-system">
+                            <a class="d-flex align-items-end" target="_blank" href="https://github.com/SyedArsalan798/car-rental">
                                 <i class="bi bi-bootstrap-fill fs-3" style="margin-right: 7px;"></i>
                                 <h4 class="card-title">car-rental</h4>
                             </a>
@@ -214,7 +247,7 @@
                             </p>
                             <div class="link">
                                 Website Link: 
-                                <a href="syedarsalan798.github.io/car-rental/">syedarsalan798.github.io/car-rental/</a>
+                                <a href="https://syedarsalan798.github.io/car-rental/">https://syedarsalan798.github.io/car-rental/</a>
                             </div>
                             <div class="spent-time d-flex">
                                 <p class="text-muted" style="margin-right: 5px;">Time Spent on Project: </p>
@@ -226,22 +259,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="row gx-1">
-                            <div class="col-md mb-1">
-                                <img class="card-img img-fluid rounded-2" src="carrental1.png" alt="Title">
+                    <div class="col-md-12 mb-1">
+                        <div id="carouselId3" class="carousel slide carousel-fade mx-2 mb-2" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselId3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                                <li data-bs-target="#carouselId3" data-bs-slide-to="1" aria-label="Second slide"></li>
+                                <li data-bs-target="#carouselId3" data-bs-slide-to="2" aria-label="Third slide"></li>
+                                <li data-bs-target="#carouselId3" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+                
+                            </ol>
+                            <div class="carousel-inner" role="listbox" style="border-radius: 10px; opacity: 0.8;">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="carrental1.png" class="w-100 d-block" alt="First slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="carrental2.png" class="w-100 d-block" alt="Second slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="carrental3.png" class="w-100 d-block" alt="Third slide">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="carrental4.png" class="w-100 d-block" alt="Third slide">
+                                </div>
                             </div>
-                            <div class="col-md">
-                                <img class="card-img img-fluid rounded-2" src="carrental4.png" alt="Title">
-                            </div>
-                        </div>
-                        <div class="row gx-1 my-1">
-                            <div class="col-md mb-1">
-                                <img class="card-img img-fluid rounded-2" src="carrental2.png" alt="Title">
-                            </div>
-                            <div class="col-md">
-                                <img class="card-img img-fluid rounded-2" src="carrental3.png" alt="Title">
-                            </div>
+
                         </div>
                     </div>
                     

@@ -35,12 +35,12 @@
         border: 0;
     }
     .nav-link:hover{
-        /* background-color: #ffd900d3; */
-        color: #ffd900d3;
-        
+        color: white;
+        background-color: #161c24;
     }
     .nav-link{
         color: white;
+        border-radius: 7px;
     }
     main{
         width: 100%;
@@ -54,11 +54,11 @@
         font-family: 'Roboto', sans-serif;
     }
     #name:focus, #email:focus, #msg:focus {
-        border: 2px solid grey;
+        border: 1px solid grey;
         box-shadow: none;
     }
     #name, #email, #msg{
-        border: 2px solid transparent;
+        border: 1px solid transparent;
     }
 
     </style>
@@ -98,27 +98,27 @@
   <main style="margin-bottom: 100px;">
 
     <div class="container">
-        <p class="mx-5 lead mb-0 text-center" style="color: rgb(194, 194, 194);">CONTACT US</p>
-        <p class="mx-5 text-center fs-5 text-white">
-            We would love to hear from you. Feel free to reach out to us by filling out the contact form below.
+        <p class="mx-5 lead mb-0 text-center" style="color: rgb(194, 194, 194);">CONTACT ME NOW</p>
+        <p class="mx-5 mb-4 text-center fs-5 text-white">
+            I would love to hear from you. Feel free to reach out to me by filling out the contact form below.
         </p>
-<div class="card bg-transparent" style="border: 2px solid rgb(61, 61, 61);">
+<div class="card bg-transparent" style="border: 1px solid rgb(61, 61, 61); border-radius: 10px;">
         <form action="post" class="m-5">
             <div class="mb-3">
                 <label for="name" class="form-label text-white">Full Name</label>
-                <input type="text" class="form-control rounded-2 bg-dark text-white" name="name" id="name" aria-describedby="emailHelpId" placeholder="John Doe" style="padding: 13px;">
+                <input type="text" class="form-control rounded-2 bg-dark text-white" name="name" id="name" aria-describedby="emailHelpId" required placeholder="John Doe" style="padding: 13px;">
               </div>
             <div class="mb-3">
                 <label for="email" class="form-label text-white">Email</label>
-                <input type="email" class="form-control rounded-2 bg-dark text-white" name="email" id="email" aria-describedby="emailHelpId" placeholder="abc@mail.com" style="padding: 13px;">
+                <input type="email" class="form-control rounded-2 bg-dark text-white" name="email" id="email" aria-describedby="emailHelpId" required placeholder="abc@mail.com" style="padding: 13px;">
                 <small id="emailHelpId" class="form-text text-muted">I'll never save your information</small>
               </div>
               <div class="mb-3">
                 <label for="msg" class="form-label text-white">Message</label>
-                <textarea class="form-control rounded-2 bg-dark text-white" name="msg" id="msg" rows="4" style="resize: none;padding: 13px;" placeholder="Type Message..."></textarea>
+                <textarea class="form-control rounded-2 bg-dark text-white" name="msg" id="msg" rows="5" style="resize: none;padding: 13px;" required placeholder="I'm Playing with a Cat..."></textarea>
               </div>
 
-              <button type="submit" name="submit" id="submit" class="btn btn-dark rounded-2 text-white px-4 py-3">SEND MESSAGE</button>
+              <button type="submit" name="submit" id="submit" class="btn btn-dark rounded-2 text-white px-4 py-2">SEND MESSAGE</button>
 
 
         </form>
