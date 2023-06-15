@@ -18,11 +18,6 @@
     <style>
         body{
             background-color: black;
-            background-image: url(https://i.pinimg.com/originals/7b/a0/9a/7ba09a4d53967c261d571597ef9e2cef.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment:fixed;
         }
     .navbar-brand{
         box-sizing: border-box;
@@ -40,8 +35,8 @@
         border: 0;
     }
     .nav-link:hover{
-        background-color: #ffd900d3;
-        color: black;
+        /* background-color: #ffd900d3; */
+        color: #ffd900d3;
         
     }
     .nav-link{
@@ -56,8 +51,14 @@
         border-radius: 10px;
     }
     li{
-        font-weight: bold;
         font-family: 'Roboto', sans-serif;
+    }
+    #name:focus, #email:focus, #msg:focus {
+        border: 2px solid grey;
+        box-shadow: none;
+    }
+    #name, #email, #msg{
+        border: 2px solid transparent;
     }
 
     </style>
@@ -66,8 +67,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark p-0 align-items-center" style="background-color: black;">
-            <a class="navbar-brand mx-4" href="#"><img src="Webriew (1).png" alt="webriew" class="img-fluid"></a>
-            <button class="navbar-toggler d-lg-none mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            <a class="navbar-brand" href="#"><img src="Webriew (1).png" alt="webriew" class="img-fluid"></a>
+            <button class="navbar-toggler d-lg-none mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -86,21 +87,54 @@
                         <a class="nav-link px-2" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
-                <a class="fiverr btn mx-4 rounded-0 border-2 px-4 py-2" style="background-color: #FFD700; " href="https://www.fiverr.com/webriew" target="_blank" role="button" onmouseover="this.style.backgroundColor='#ffff'"
+                <a class="fiverr btn mx-4 rounded-pill px-4 py-0" style="background-color: #FFD700; " href="https://www.fiverr.com/webriew" target="_blank" role="button" onmouseover="this.style.backgroundColor='#ffe867'"
                 onmouseout="this.style.backgroundColor='#FFD700'">
-                <b>MY</b>  
+                <!-- <b>MY</b>   -->
                 <img src="https://th.bing.com/th/id/R.44bb9ce0af9de6ca7dfbba7428d7c4f4?rik=zB0NbwKqALur8g&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f10%2fFiverr-Logo.png&ehk=h45sJ0i%2bwIYggBVKSdxRuIfOiyPZbh3HkDqPm48LSBY%3d&risl=&pid=ImgRaw&r=0" width="70px" alt="">
                 </a>
             </div>
         </nav>
       </header>
-  <main>
+  <main style="margin-bottom: 100px;">
+
+    <div class="container">
+        <p class="mx-5 lead mb-0 text-center" style="color: rgb(194, 194, 194);">CONTACT US</p>
+        <p class="mx-5 text-center fs-5 text-white">
+            We would love to hear from you. Feel free to reach out to us by filling out the contact form below.
+        </p>
+<div class="card bg-transparent" style="border: 2px solid rgb(61, 61, 61);">
+        <form action="post" class="m-5">
+            <div class="mb-3">
+                <label for="name" class="form-label text-white">Full Name</label>
+                <input type="text" class="form-control rounded-2 bg-dark text-white" name="name" id="name" aria-describedby="emailHelpId" placeholder="John Doe" style="padding: 13px;">
+              </div>
+            <div class="mb-3">
+                <label for="email" class="form-label text-white">Email</label>
+                <input type="email" class="form-control rounded-2 bg-dark text-white" name="email" id="email" aria-describedby="emailHelpId" placeholder="abc@mail.com" style="padding: 13px;">
+                <small id="emailHelpId" class="form-text text-muted">I'll never save your information</small>
+              </div>
+              <div class="mb-3">
+                <label for="msg" class="form-label text-white">Message</label>
+                <textarea class="form-control rounded-2 bg-dark text-white" name="msg" id="msg" rows="4" style="resize: none;padding: 13px;" placeholder="Type Message..."></textarea>
+              </div>
+
+              <button type="submit" name="submit" id="submit" class="btn btn-dark rounded-2 text-white px-4 py-3">SEND MESSAGE</button>
+
+
+        </form>
+    </div>
+    </div>
 
   </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
+
+  <script>
+
+    let inputs = document.querySelector('#name');
+    // inputs.addEventListener('mouseover', function(){
+    //     this.style.padding = '50px';
+    // });
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
