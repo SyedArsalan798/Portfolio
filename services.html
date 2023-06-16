@@ -55,6 +55,11 @@
         font-family: 'Roboto', sans-serif;
     }
 
+    video{
+        border: 1px solid rgb(61, 61, 61);
+        border-radius: 10px;
+    }
+
     </style>
 </head>
 
@@ -96,7 +101,7 @@
             <p class="text-center fs-1 text-white fw-light">
                 Check out my Services that I offer!
             </p>
-            <div class="row justify-content-center gy-4">
+            <div class="row justify-content-center gy-5">
                 <div class="col-11">
                     <div class="card px-3 py-3 justify-content-between bg-transparent text-white" style="border: 1px solid rgb(61, 61, 61); border-radius: 10px;">
                         <div class="row">
@@ -122,7 +127,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xl">
-                                        <video class="w-100 h-100 p-3" style="position: relative;" src="html css bootstrap.mp4" controls muted></video>
+                                        <video class="w-100 h-100 p-3" style="position: relative;" src="html css bootstrap.mp4" muted controlsList="nodownload"></video>
 
                                     </div>
                                 </div>
@@ -161,7 +166,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xl">
-                                        <video class="w-100 h-100 p-3" src="php bootstrap.webm" controls></video>
+                                        <video class="w-100 h-100 p-3" src="php bootstrap.webm"  muted controlsList="nodownload"></video>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +209,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xl">
-                                        <video class="w-100 h-100 p-3" src="database.mp4" controls></video>
+                                        <video class="w-100 h-100 p-3" src="database.mp4"  muted controlsList="nodownload"></video>
                                     </div>
                                 </div>
                             </div>
@@ -232,6 +237,23 @@
 
 
   </main>
+
+  <script>
+
+                                        
+    var videos = document.querySelectorAll('video');
+    for (let i = 0; i < videos.length; i++) {
+        videos[i].addEventListener('click', function(){
+          if (videos[i].paused) {
+              videos[i].play();
+          } else {
+              videos[i].pause();
+          }
+    });
+    }
+
+  
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
